@@ -1,0 +1,251 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+}
+
+header{
+    
+    position: sticky;
+    top:0px;
+    
+}
+
+
+.navbar{
+
+    background-color:rgb(233, 92, 92);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    padding: 3px;
+   
+}
+
+.navbar .logo{
+
+    width: 60px;
+    height: 60px;
+    grid-column: 1/2;
+}
+
+
+.navbar .menu
+{
+grid-column: 4/8;
+display: flex;
+justify-content: space-around;
+
+}
+
+.navbar .menu li{
+
+    list-style: none;
+}
+
+.navbar .menu a{
+
+    text-decoration: none; 
+
+}
+
+.navbar .menu-bar
+{
+    display: none;
+}
+/**/
+.menu li a{
+    position: relative;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 17px;
+}
+
+.menu li a:hover{
+   
+    color:#0cee9b;
+    
+}
+
+.menu a.active {
+    
+    color: black;
+    }
+
+
+.imgheader{
+    background-image: url(../img/header3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+}
+
+.titulo{
+    background-color: #04AA6D;
+  
+    font-size:xx-large;
+    font-family: cursive;
+    
+}
+
+.contenido
+        {
+            grid-column-start: 2;
+            grid-column-end: 12;
+            background-color: white;
+            text-align: center;
+        }
+
+            /*Footer*/
+
+ footer{
+    display: grid;
+    background-color:rgb(233, 92, 92);
+    color: white;
+    text-align: center;
+    align-items: center;
+    
+  }
+.formulario
+{
+    display: inline;
+    text-align: center;
+}
+
+.tabla
+{
+    display: inline;
+    text-align: center;
+}
+
+.botonesFormularioReserva
+{
+    padding: 10px;
+}
+
+ .novedades {
+            background-color: black;
+            overflow: auto;
+            display: block;
+          
+          }
+    
+.novedadesTitulo
+          {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+          }
+          
+.novedadesDescripcion
+          
+          {
+            width: 400px;
+            margin: auto;
+            text-align: justify;
+            color:white;
+          }
+
+
+
+        .contenidoHome
+        {
+          display: flex;
+        }
+
+        .bienvenida{
+
+            font-size:xx-large;
+        }
+  
+        iframe
+               {
+                   width: 850px;
+                   height: 500px;
+               }
+       
+               .novedades {
+                   width: 700px;
+                   height: 400px; 
+               }         
+
+
+
+
+               th,td{
+                text-align:center;
+                padding:5px 0;
+              }
+              
+             .tabla th{
+                background-color: coral;
+               color:white;
+               padding: 5px;
+              }
+              
+             .tabla td{
+                background-color: orange;
+              }
+              
+              .formulario td{
+              
+                background-color: white;
+              }
+              
+              .formulario td{
+                text-align:left;
+                padding:5px 0;
+              }
+
+
+
+              #reglamento{
+               
+                    padding-right: 10px;
+                    text-align: justify;
+                
+              }
+
+              #reglamento h3{
+                line-height: 50px;
+                margin-left: 10px;
+                
+            }
+            
+            
+            #reglamento h4{
+              line-height: 30px;
+            /*margin-block-start: 30px;*/
+            margin-left: 20px;
+            font-weight: normal;
+            }
+            
+            #reglamento ul{
+              line-height: 30px;
+              margin-left: 40px;
+            
+            }
+            
+            #reglamento ol{
+              margin-block-start: 30px;
+              margin-left: 30px;
+            
+            }
+
+
+            
+    

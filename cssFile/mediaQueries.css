@@ -1,0 +1,271 @@
+@media screen and (max-width: 1200px) {
+
+
+   
+
+    iframe
+               {
+                   width: 750px;
+                   height: 500px;
+               }
+       
+               .novedades {
+                   width: 600px;
+                   height: 400px; 
+               }           
+    
+    }
+
+
+@media screen and (max-width: 1024px) {
+
+    .navbar{
+        position:relative;
+       
+    }
+
+    .navbar .menu
+{
+    grid-column: 2/8;
+    display: flex;
+    justify-content: space-around;
+
+}
+    
+    .contenidoHome
+    {
+      display:block;
+    }
+    iframe
+               {
+                   width: 750px;
+                   height: 500px;
+               }
+       
+               .novedades {
+                   width: 600px;
+                   height: 400px; 
+                   display:inline-block;
+               }           
+    
+    }
+
+
+
+@media screen and (max-width: 768px) {
+
+
+
+    .navbar{
+        position:relative;
+       
+    }
+
+    .navbar .menu
+{
+    grid-column: 2/8;
+    display: flex;
+    justify-content: space-around;
+
+}
+    
+.bienvenida{
+
+    font-size:medium;
+}
+
+    .contenidoHome
+    {
+      display:block;
+    }
+    iframe
+               {
+                   width: 600px;
+                   height: 500px;
+               }
+       
+               .novedades {
+                   width: 500px;
+                   height: 400px; 
+                   display:inline-block;
+               }           
+    
+    }
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+
+.navbar{
+    position: relative;
+}
+
+.navbar .menu-bar{
+    display: block;
+    grid-column: 8/9;
+    font-size: 2em;
+}
+
+.navbar .menu{
+    position: absolute;
+    width: 70%;
+    height: 200px;
+    display: grid;
+    align-items: center;
+    background-color:rgb(233, 92, 92);
+    margin-top: 250px;
+    transform: translateX(180%);
+    transition: all 2s;
+}
+
+
+.navbar .menu-lateral {
+    transform: translateX(71%);
+}
+
+.bienvenida{
+
+    font-size:medium;
+}
+
+.contenidoHome
+{
+  display:block;
+}
+iframe
+           {
+               width: 480px;
+               height: 500px;
+           }
+   
+           .novedades {
+               width: 480px;
+               height: 400px; 
+               display:inline-block;
+           }           
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .navbar{
+        position: relative;
+    }
+    
+    .navbar .menu-bar{
+        display: block;
+        grid-column: 8/9;
+        font-size: 2em;
+    }
+    
+    .navbar .menu{
+        position: absolute;
+        width: 75%;
+        height: 200px;
+        display: grid;
+        align-items: center;
+        background-color:rgb(233, 92, 92);
+        margin-top: 250px;
+        transform: translateX(180%);
+        transition: all 2s;
+    }
+    
+    
+    .navbar .menu-lateral {
+        transform: translateX(51%);
+    }
+    
+    
+    
+    .contenidoHome
+    {
+      display:block;
+   
+    }
+    iframe
+               {
+                   width: 350px;
+                   height: 500px;
+               }
+       
+               .novedades {
+                   width: 350px;
+                   height: 400px; 
+                   display:inline-block;
+               }
+    
+    
+              
+                   
+               
+              
+            
+    
+    
+    }
+
+    @media screen and (max-width: 320px) {
+
+        .navbar{
+            position: relative;
+        }
+        
+        .navbar .menu-bar{
+            display: block;
+            grid-column: 7/8;
+            font-size: 2em;
+        }
+        
+        .navbar .menu{
+            position: absolute;
+            width: 100%;
+            height: 200px;
+            display: grid;
+            align-items: center;
+            background-color:rgb(233, 92, 92);
+            margin-top: 250px;
+            transform: translateX(180%);
+            transition: all 2s;
+        }
+        
+        
+        .navbar .menu-lateral {
+            transform: translateX(20%);
+        }
+        
+        
+        
+        .contenidoHome
+        {
+          display:block;
+        
+        }
+        iframe
+                   {
+                    
+                       display: none;
+                   }
+           
+                   .novedades {
+                       width: 230px;
+                       height: 600px; 
+                       display:inline-block;
+                   }     
+
+                   .tabla th{
+                   font-size:small;
+                   padding: 1px;
+                  }
+                  
+                 .tabla td{
+                    font-size:small;
+                  }
+        
+        }
+    
+
+
