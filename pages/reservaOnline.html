@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReservaOnline</title>
+  <link rel="stylesheet" href="../cssFile/style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../cssFile/mediaQueries.css">
+</head>
+
+<body>
+
+
+  <header>
+       
+       
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="../img/raquets.png" alt="">
+        </div>
+
+        <ul class="menu" id="menu">
+      <li> <a href="../index.html">Home</a></li>
+       <li><a class="active" href="reservaOnline.html">Reserva Online</a></li>
+      <li> <a href="torneos.html">Torneos</a>     
+      </li>
+      <li> <a  href="ranking.html">Ranking</a></li>
+    <li>  <a  href="reglamento.html">Reglamento</a></li>
+  </ul>
+    <div class="menu-bar" id="menu-bar">
+      <i class="fas fa-bars"></i>
+  </div>
+</nav>
+
+
+</header>
+<script src="../scripts/script.js"></script>
+
+<div class="imgheader">
+  
+
+</div>
+
+  <div class="titulo">Reserva online</div>
+
+
+  <div class="contenido">
+
+    <p>Por favor, completar el siguiente formulario:</p>
+    <form class="formularioReserva">
+      <table class="formulario">
+        <tr>
+          <td><label for="nsocio">Número de socio: </label></td>
+
+          <td>
+            <input type="text" for="nsocio" required>
+          </td>
+
+        </tr>
+
+        <tr>
+          <td>
+            <label id="nnombre">Nombre y apellido: </label>
+          </td>
+          <td>
+            <input type="text" id="nnombre" required>
+          </td>
+        </tr>
+
+        <tr>
+          <td> <label> Tipo Partido:</label></td>
+          <td> <select>
+              <option>Single</option>
+              <option>Double</option>
+            </select> </td>
+
+        </tr>
+
+        <tr>
+
+          <td><label for="nmail">Mail:</label></td>
+          <td><input type="email" id=nmail required></td>
+        </tr>
+
+        <tr>
+          <td><label>Dia: </label></td>
+          <td><input type="date" id="fecha" name="birthday">
+          </td>
+
+        </tr>
+        <tr>
+          <td><label>Hora: </label></td>
+          <td><input type="time" id="hora" name="birthday">
+          </td>
+        </tr>
+
+
+      </table>
+<div class="botonesFormularioReserva">
+      <input type="submit" value="Reservar">
+      <input type="reset" name="Borrar">
+    </div>
+    </form>
+
+  </div>
+
+  <footer> 
+    <p>02320-495169</p>
+    <p>© 2022 TODO TENIS - CREADO POR VANESA SOLANGE DOUGAN</p>
+  </footer>
+  </div>
+</body>
+
+</html>
