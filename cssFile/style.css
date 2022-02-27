@@ -92,10 +92,10 @@ justify-content: space-around;
 }
 
 .titulo{
-    background-color: #04AA6D;
-  
+    background-image: linear-gradient(to right, green, #04AA6D, yellow);
     font-size:xx-large;
     font-family: cursive;
+    color: white;
     
 }
 
@@ -192,7 +192,7 @@ justify-content: space-around;
               }
               
              .tabla th{
-                background-color: coral;
+                background-image:linear-gradient(to bottom, yellow,green);
                color:white;
                padding: 5px;
               }
