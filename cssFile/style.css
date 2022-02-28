@@ -115,12 +115,13 @@ justify-content: space-around;
     */
 
 
-.titulo{
-    background-image: linear-gradient(to right, green, #04AA6D, yellow);
-    font-size:xx-large;
-    font-family: cursive;
-    color: white;
-    
+
+#titulo{
+  background-image: linear-gradient(to right, green, #04AA6D, yellow);
+  font-size:xx-large;
+  font-family: cursive;
+  color: white;
+  
 }
 
 .contenido
@@ -134,13 +135,23 @@ justify-content: space-around;
             /*Footer*/
 
  footer{
-    display: grid;
+  /*  display: grid;*/
     background-color:rgb(233, 92, 92);
     color: white;
-    text-align: center;
-    align-items: center;
+    min-height: 100px;;
+  text-align: center;
+    /*  align-items: center;*/
     
   }
+
+  #iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+
+
+
 .formulario
 {
     display: inline;
