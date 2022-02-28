@@ -9,32 +9,48 @@ body{
     background-color: bisque;
 }
 
-header{
+/*header{
     
     position: sticky;
     top:0px;
     
+}*/
+
+.menuboostrap .navbar-nav  .nav-item .nav-link{
+  color:white;
+  font-weight: bold;
+} 
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: black;
+  font-weight: bold;
+}
+
+
+.menuboostrap .navbar-nav  .nav-item .nav-link:hover{
+   
+  color:#0cee9b;
+  
 }
 
 
 .navbar{
 
     background-color:rgb(233, 92, 92);
-    display: grid;
+   /* display: grid;
     grid-template-columns: repeat(8, 1fr);
     align-items: center;
     padding: 3px;
-   
+   */
 }
 
 .navbar .logo{
 
     width: 60px;
     height: 60px;
-    grid-column: 1/2;
 }
 
-
+/*
 .navbar .menu
 {
 grid-column: 4/8;
@@ -58,7 +74,7 @@ justify-content: space-around;
 {
     display: none;
 }
-/**/
+
 .menu li a{
     position: relative;
     color: white;
@@ -77,19 +93,27 @@ justify-content: space-around;
     
     color: black;
     }
+/**/
+.carousel-inner{
+  max-height: 700px;
+}
 
-
+ /*
 .imgheader{
     background-image: url(../img/header3.jpg);
-    background-repeat: no-repeat;
+    max-height: 400px;
+    max-width: 100%;
+
+   background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(8, 1fr);
-
 }
+    */
+
 
 .titulo{
     background-image: linear-gradient(to right, green, #04AA6D, yellow);

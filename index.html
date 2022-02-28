@@ -16,18 +16,18 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+   <!-- Bootstrap CSS -->
+   <link href="cssFile/bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
 </head>
 
 <body>
-
+  
     <div class="grid-container">
-
-
         <header>
+          
            
-           
-            <nav class="navbar">
+           <!-- <nav class="navbar">
 
                 <div class="animate__animated animate__bounce animate__repeat-3 logo">
                     <img src="img/raquets.png" alt="">
@@ -47,16 +47,65 @@
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
-       
+        -->
        
         </header>
-        <script src="scripts/script.js"></script>
+        <!-- <script src="scripts/script.js"></script>
+ 
 
-            <div class="imgheader">
-                
-
+            <div class="imgheader container-fluid">
+             
+               
             </div>
-        
+         -->
+         <nav class="navbar sticky-top navbar-expand-lg navbar-light menuboostrap">
+            <div class="container-fluid">
+                <div class="animate__animated animate__bounce animate__repeat-3 logo navbar-brand">
+                    <img src="img/raquets.png" alt="">
+                </div>
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/reservaOnline.html">Reserva Online</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+
+         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="/img/header0.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="/img/header1.jpg" class="d-block w-100" alt="header4">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="/img/header6.png" class="d-block w-100" alt="header4">
+              </div>
+            </div>
+          </div>
 
 
         <section class="titulo">
@@ -144,6 +193,10 @@
 
 
     </div>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="scripts/bootstrap/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
