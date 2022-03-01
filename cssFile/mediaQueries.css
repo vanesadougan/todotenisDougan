@@ -256,16 +256,20 @@ iframe
                        display:inline-block;
                    }     
 
-                   .tabla th{
-                   font-size:small;
-                   padding: 1px;
-                  }
-                  
-                 .tabla td{
-                    font-size:small;
-                  }
+          
         
         }
     
 
 
+*/
+@media screen and (max-width: 320px) {
+.tabla th{
+    font-size:small;
+    padding: 1px;
+   }
+   
+  .tabla td{
+     font-size:small;
+   }
+}

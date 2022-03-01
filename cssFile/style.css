@@ -98,6 +98,16 @@ justify-content: space-around;
   max-height: 700px;
 }
 
+.header {
+  color: #36A0FF;
+  font-size: 27px;
+  padding: 10px;
+}
+
+.bigicon {
+  font-size: 35px;
+  color: #36A0FF;
+}
  /*
 .imgheader{
     background-image: url(../img/header3.jpg);

@@ -86,7 +86,7 @@
           <img src="../img/reserva0.jpg" class="d-block w-100" alt="header4">
 </div>
 <div class="col-md-5"> 
-    <p>Por favor, completar el siguiente formulario:</p>
+    <!-- <p>Por favor, completar el siguiente formulario:</p>
     <form class="formularioReserva">
       <table class="formulario">
         <tr>
@@ -140,7 +140,88 @@
       <input type="submit" value="Reservar">
       <input type="reset" name="Borrar">
     </div>
-    </form>
+    </form> -->
+
+
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="well well-sm">
+                  <form class="form-horizontal" method="post">
+                      <fieldset>
+                          <legend class="text-center header">Reserva cancha</legend>
+
+                          <div class="row justify-content-center">
+                            <div class="col-8 mb-3">
+                              <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control" required>
+                            </div>
+                        </div>
+
+
+                        <div class="row justify-content-center">
+                          <div class="col-8 mb-3">
+                                  <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control" required>
+                              </div>
+                          </div>
+
+                          <div class="row justify-content-center">
+                            <div class="col-8 mb-3">
+                                    <input id="nsocio" name="socio" type="text" placeholder="Número de socio" class="form-control">
+                                </div>
+                            </div>
+  
+                          <div class="row justify-content-center">
+                            <div class="col-8 mb-3">
+                                  <input id="email" name="email" type="text" placeholder="Correo electrónico" class="form-control" required>
+                              </div>
+                          </div>
+
+                          <div class="row justify-content-center">
+                            <div class="col-8 mb-3">
+
+                          <select id="inputState" class="form-select">
+                            <option selected>Single</option>
+                            <option>Double</option>
+                          </select>
+                          </div>
+                          </div>
+
+                          <div class="row justify-content-center">
+                            <div class="col-8 mb-3">
+                              <label>Dia: </label>
+                          <input type="date" id="fecha" name="birthday" required>
+                        </div>
+                      </div>
+
+
+                      <div class="row justify-content-center">
+                        <div class="col-8 mb-3">
+                      <label>Hora: </label>
+          <input type="time" id="hora" name="birthday" required>
+          </div>
+          </div>
+  
+                    
+          <div class="row justify-content-center">
+             <div class="col-8 mb-3">
+                                  <textarea class="form-control" id="message" name="message" placeholder="Ingresa algun comentario que necesites que tengamos en cuenta." rows="7"></textarea>
+                              </div>
+                          </div>
+  
+                          <div class="form-group">
+                              <div class="col-md-12 text-center  mb-1">
+                                <button class="btn btn-primary" type="submit">Reservar</button>
+                              </div>
+                          </div>
+                      </fieldset>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
 
   </div>
 </div>
