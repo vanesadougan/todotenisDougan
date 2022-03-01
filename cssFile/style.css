@@ -206,17 +206,16 @@ justify-content: space-around;
 
             font-size:xx-large;
         }
-  
-        iframe
+  /*     iframe
                {
                    width: 850px;
                    height: 500px;
-               }
+               }*/
        
-               .novedades {
-                   width: 700px;
-                   height: 400px; 
-               }         
+             .novedades {
+                  max-width: 550px;
+                   max-height: 400px; 
+               }        
 
 
 
