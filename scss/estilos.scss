@@ -1,0 +1,187 @@
+/* Variables */
+$fondo-barra: #F44336;
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+}
+
+
+.menuboostrap .navbar-nav  .nav-item {
+
+    .nav-link{
+        color:white;
+        font-weight: bold;
+      } 
+
+      .nav-link:hover{
+     
+        color:#0cee9b;
+        
+      }
+
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: black;
+    font-weight: bold;
+  }
+
+   
+  
+  .navbar{
+
+    background-color:$fondo-barra;
+
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+}
+  
+  .bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+  }
+
+  #titulo{
+    background-image: linear-gradient(to right, green, #04AA6D, yellow);
+    font-size:xx-large;
+    font-family: cursive;
+    color: white;
+    
+  }
+  
+  .contenido
+          {
+              grid-column-start: 2;
+              grid-column-end: 12;
+              background-color: white;
+              text-align: center;
+          }
+
+          footer{
+              background-color:$fondo-barra;
+              color: white;
+              min-height: 100px;;
+            text-align: center;
+              
+            }
+          
+            #iconos  i {
+              font-size: 26px;
+              padding: 0 8px;
+              color:#f3f3f3;
+          }
+
+          .formulario
+{
+    display: inline;
+    text-align: center;
+}
+
+.tabla
+{
+    display: inline;
+    text-align: center;
+}
+
+.botonesFormularioReserva
+{
+    padding: 10px;
+}
+
+ .novedades {
+            background-color: black;
+            overflow: auto;
+            display: block;
+            max-width: 550px;
+            max-height: 400px; 
+          
+          }
+    
+.novedadesTitulo
+          {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+          }
+          
+.novedadesDescripcion
+          
+          {
+            width: 400px;
+            margin: auto;
+            text-align: justify;
+            color:white;
+          }
+
+
+
+        .contenidoHome
+        {
+          display: flex;
+        }
+
+        .bienvenida{
+
+            font-size:xx-large;
+        }
+
+
+        th,td{
+            text-align:center;
+            padding:5px 0;
+          }
+
+          .tabla 
+          {
+          th{
+            background-image:linear-gradient(to bottom, yellow,green);
+           color:white;
+           padding: 5px;
+          }
+          
+         td{
+            background-color: orange;
+          }
+        }
+
+        .formulario td{
+            background-color: white;
+            text-align:left;
+            padding:5px 0;
+          }
+
+
+#reglamento{
+               
+            padding-right: 10px;
+            text-align: justify;
+            h3{
+                line-height: 50px;
+                margin-left: 10px;
+            }
+            h4{
+                line-height: 30px;
+              margin-left: 20px;
+              font-weight: normal;
+              }
+              ul{
+                line-height: 30px;
+                margin-left: 40px;
+                }
+              ol{
+                    margin-block-start: 30px;
+                    margin-left: 30px;
+                 }
+      }
