@@ -19,7 +19,7 @@ body {
   font-weight: bold; }
 
 .navbar {
-  background-color: #F44336; }
+  background-color: #e95c5c; }
   .navbar .logo {
     width: 60px;
     height: 60px; }
@@ -41,7 +41,7 @@ body {
   text-align: center; }
 
 footer {
-  background-color: #F44336;
+  background-color: #e95c5c;
   color: white;
   min-height: 100px;
   text-align: center; }
