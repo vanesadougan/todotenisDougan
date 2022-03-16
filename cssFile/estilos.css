@@ -5,10 +5,12 @@
   box-sizing: border-box; }
 
 body {
-  background-color: bisque; }
+  background-color: white; }
+
+.letraBlanca, .menuboostrap .navbar-nav .nav-item .nav-link, #titulo, footer, .novedadesTitulo, .novedadesDescripcion, .tabla th, .formulario th {
+  color: white; }
 
 .menuboostrap .navbar-nav .nav-item .nav-link {
-  color: white;
   font-weight: bold; }
 
 .menuboostrap .navbar-nav .nav-item .nav-link:hover {
@@ -31,8 +33,11 @@ body {
 #titulo {
   background-image: linear-gradient(to right, green, #04AA6D, yellow);
   font-size: xx-large;
-  font-family: cursive;
-  color: white; }
+  font-family: cursive; }
+
+.tabla, .formulario {
+  display: inline;
+  text-align: center; }
 
 .contenido {
   grid-column-start: 2;
@@ -42,7 +47,6 @@ body {
 
 footer {
   background-color: #e95c5c;
-  color: white;
   min-height: 100px;
   text-align: center; }
 
@@ -50,14 +54,6 @@ footer {
   font-size: 26px;
   padding: 0 8px;
   color: #f3f3f3; }
-
-.formulario {
-  display: inline;
-  text-align: center; }
-
-.tabla {
-  display: inline;
-  text-align: center; }
 
 .botonesFormularioReserva {
   padding: 10px; }
@@ -74,14 +70,12 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 50px;
-  font-family: 'Times New Roman', Times, serif;
-  color: white; }
+  font-family: 'Times New Roman', Times, serif; }
 
 .novedadesDescripcion {
   width: 400px;
   margin: auto;
-  text-align: justify;
-  color: white; }
+  text-align: justify; }
 
 .contenidoHome {
   display: flex; }
@@ -93,12 +87,11 @@ th, td {
   text-align: center;
   padding: 5px 0; }
 
-.tabla th {
+.tabla th, .formulario th {
   background-image: linear-gradient(to bottom, yellow, green);
-  color: white;
   padding: 5px; }
 
-.tabla td {
+.tabla td, .formulario td {
   background-color: orange; }
 
 .formulario td {
@@ -122,3 +115,13 @@ th, td {
   #reglamento ol {
     margin-block-start: 30px;
     margin-left: 30px; }
+
+/*Creamos el bucle para usar los valores del mapa*/
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--instagram {
+  background-color: #C25E30; }
