@@ -1,6 +1,18 @@
 /* Variables */
 $fondo-barra:rgb(233, 92, 92);
 
+$estilosNovedades: (
+   fondo: black,
+   overflow: auto,
+   bloque: block,
+   ancho: 550px,
+   alto: 400px, 
+);   
+
+
+
+
+
 *{
 
     margin: 0;
@@ -9,14 +21,18 @@ $fondo-barra:rgb(233, 92, 92);
 }
 
 body{
-    background-color: bisque;
+    background-color: white;
 }
 
+.letraBlanca{
+  color: white;
+
+}
 
 .menuboostrap .navbar-nav  .nav-item {
 
     .nav-link{
-        color:white;
+      @extend .letraBlanca;
         font-weight: bold;
       } 
 
@@ -54,10 +70,17 @@ body{
     background-image: linear-gradient(to right, green, #04AA6D, yellow);
     font-size:xx-large;
     font-family: cursive;
-    color: white;
+    @extend .letraBlanca;
     
   }
   
+
+  .tabla
+  {
+      display: inline;
+      text-align: center;
+  }
+
   .contenido
           {
               grid-column-start: 2;
@@ -68,7 +91,7 @@ body{
 
           footer{
               background-color:$fondo-barra;
-              color: white;
+              @extend .letraBlanca;
               min-height: 100px;;
             text-align: center;
               
@@ -80,17 +103,12 @@ body{
               color:#f3f3f3;
           }
 
-          .formulario
+.formulario
 {
-    display: inline;
-    text-align: center;
+    @extend .tabla;
 }
 
-.tabla
-{
-    display: inline;
-    text-align: center;
-}
+
 
 .botonesFormularioReserva
 {
@@ -98,13 +116,15 @@ body{
 }
 
  .novedades {
-            background-color: black;
-            overflow: auto;
-            display: block;
-            max-width: 550px;
-            max-height: 400px; 
+            background-color: map-get($estilosNovedades, fondo);
+            overflow: map-get($estilosNovedades, overflow);
+            display: map-get($estilosNovedades, bloque);
+            max-width: map-get($estilosNovedades, ancho);
+            max-height: map-get($estilosNovedades, alto); 
           
           }
+
+
     
 .novedadesTitulo
           {
@@ -113,7 +133,7 @@ body{
             padding-bottom: 10px;
             font-size: 50px;
             font-family: 'Times New Roman', Times, serif;
-            color: white;
+            @extend .letraBlanca;
           }
           
 .novedadesDescripcion
@@ -122,7 +142,7 @@ body{
             width: 400px;
             margin: auto;
             text-align: justify;
-            color:white;
+            @extend .letraBlanca;
           }
 
 
@@ -147,7 +167,7 @@ body{
           {
           th{
             background-image:linear-gradient(to bottom, yellow,green);
-           color:white;
+            @extend .letraBlanca;
            padding: 5px;
           }
           
@@ -163,25 +183,42 @@ body{
           }
 
 
+
+
+@mixin linesMargin($lineH, $marginL) {
+            line-height: $lineH;
+            margin-left: $marginL;
+         }
+
 #reglamento{
                
             padding-right: 10px;
             text-align: justify;
             h3{
-                line-height: 50px;
-                margin-left: 10px;
+                @include linesMargin(50px,10px );
             }
             h4{
-                line-height: 30px;
-              margin-left: 20px;
+              @include linesMargin(30px,20px );
               font-weight: normal;
               }
               ul{
-                line-height: 30px;
-                margin-left: 40px;
+                @include linesMargin(30px,40px );
                 }
               ol{
                     margin-block-start: 30px;
                     margin-left: 30px;
                  }
-      }
+      }  
+
+
+$redes: ( /*Declaramos nuestro mapa*/
+        twitter: #55acee,
+        facebook:  #3a5795,
+        instagram: #C25E30
+); 
+/*Creamos el bucle para usar los valores del mapa*/
+@each $red, $color in $redes {
+   .btn--#{$red} {
+       background-color: $color;
+   }
+}
